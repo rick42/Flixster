@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#C1D5BE">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -12,7 +13,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -23,6 +25,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="#FF000000"
         android:textSize="24sp"
         tools:text="El Camino: A Breaking Bad Movie" />
 
@@ -34,5 +37,6 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="#404040"
         tools:text="In the wake of his dramatic escape from captivity, Jesse Pinkman must come to terms with his past in order to forge some kind of future." />
 </RelativeLayout>

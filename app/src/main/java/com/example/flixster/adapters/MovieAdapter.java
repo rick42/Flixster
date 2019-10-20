@@ -43,7 +43,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         // Get the movie at the passed in position
         Movie movie = movies.get(position);
         // Bind the movie data into the VH
-        holder.bind(movie);
+        holder.bind(movie, position);
     }
 
     // Returns the total count of items in the view
@@ -65,9 +65,16 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             ivPoster = itemView.findViewById(R.id.ivPoster);
         }
 
-        public void bind(Movie movie) {
+        public void bind(Movie movie, int position) {
             tvTitle.setText(movie.getTitle());
+            //tvTitle.setTextColor();
             tvOverview.setText(movie.getOverview());
+            if (position % 2 == 0) {
+                this.itemView.setBackgroundColor(0xFFC1D5BE);
+            }
+            else{
+                this.itemView.setBackgroundColor(0xFFE5F1D8);
+            }
             Glide.with(context).load(movie.getPosterPath()).into(ivPoster);
         }
     }
