@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#C1D5BE">
@@ -15,7 +16,9 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="3dp"
         android:layout_marginBottom="3dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/clipart_camera"
+        tools:srcCompat="@drawable/clipart_camera" />
 
     <TextView
         android:id="@+id/tvTitle"
