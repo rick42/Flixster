@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5F1D8"
+    android:background="#C1D5BE"
     android:orientation="vertical"
     tools:context=".DetailActivity">
 
@@ -34,7 +34,8 @@
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#E5F1D8"
         android:textColor="#404040"
         tools:text="In the wake of his dramatic escape from captivity, Jesse Pinkman must come to terms with his past in order to forge some kind of future." />
 </LinearLayout>
